@@ -19,8 +19,14 @@ public class Calculadora{
       System.out.print(resultado);
       break;
 
-      case "division": resultado=n1/n2;
-      System.out.print(resultado);
+      case "division": 
+      if (n2==0){
+        System.out.print("No se puede operar");}
+        else{
+          resultado=n1/n2;
+        System.out.print(resultado);
+        break;
+        }
       break;
     }
   }
@@ -28,7 +34,7 @@ public class Calculadora{
   public static void main(String[] args){
     float n1=1;
     float n2=2;
-    op="suma";
+    op="division";
     operacion(n1,n2,op,resultado);
   }
 }
