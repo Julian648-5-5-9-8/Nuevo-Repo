@@ -8,9 +8,6 @@ public class Circulo extends JApplet {
   
   public void paint (Graphics g) {
 
-
-      //SEGUNDA Circulo
-
       g.drawString ("*",40,27);//1
       g.drawString ("*",50,25);//2 ARRIBA
       g.drawString ("*",60,27);//3
